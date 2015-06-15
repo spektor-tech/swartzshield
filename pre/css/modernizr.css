@@ -1,0 +1,4 @@
+.no-boxshadow article {
+    border: none;
+    box-shadow: 0 0 0 #fff;
+}
