@@ -9,7 +9,7 @@
  */
 session_start();
 
-$config = include_once 'config.inc.php';
+//$config = include_once 'config.inc.php';
 
 class Load {
 	public static function Mollie()
@@ -20,6 +20,10 @@ class Load {
 
 	public static function PDO()
 	{
+		$config = include_once 'config.inc.php';
 		// Start a new PDO connection
+		return new PDO(	$config['pdo']['dsn'],
+						$config['pdo']['user'],
+						$config['pdo']['pass']);
 	}
 }

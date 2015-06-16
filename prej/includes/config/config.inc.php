@@ -10,6 +10,8 @@
 
 return [
 	'pdo' => [
-		'dsn' => 'mysql:/'
+		'dsn' => 'mysql:host=localhost;port=3306;dbname=swartzshield',
+		'user' => 'swartzshield',
+		'pass' => 'zwartismooi'
 	]
 ];
