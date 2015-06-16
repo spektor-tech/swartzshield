@@ -85,6 +85,10 @@
 </head>
 <body>
 
+<div class="header">
+<img class="shield animate" onload="this.style.opacity='1';" src="img/s_shield-big.png">
+</div>
+
 <div class="textbox">
     <div class="wrap">
         <div class="type-wrap">

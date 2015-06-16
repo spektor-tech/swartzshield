@@ -41,15 +41,30 @@ body {
 	margin: 0 auto;
 }
 
-.header {margin:1% 20%;}
-.header img {
+.header {margin:2% 20%;}
+
+.header img.shield {
+	width: 33.33%; 
+	margin-left:33.33%;
+	
+}
+
+.header img.shield.animate {
+	opacity:0;
+	-moz-transition: opacity 4s; /* Firefox 4 */
+	-webkit-transition: opacity 4s; /* Safari and Chrome */
+	-o-transition: opacity 4s;
+	transition: opacity 4s;
+}
+
+.header img.logo {
 	width: 100%; 
 	margin-left:0%;
 	opacity:0;
-	-moz-transition: opacity 8s; /* Firefox 4 */
-	-webkit-transition: opacity 8s; /* Safari and Chrome */
-	-o-transition: opacity 8s;
-	transition: opacity 8s;
+	-moz-transition: opacity 12s; /* Firefox 4 */
+	-webkit-transition: opacity 12s; /* Safari and Chrome */
+	-o-transition: opacity 12s;
+	transition: opacity 12s;
 }
 	
   

@@ -8,7 +8,7 @@
         $("#typed").typed({
             strings: [
             
-            "^1000<strong>\&lt;swartzshield&gt;</strong>^200 Thanks for helping me out.\nYou will have about 25 minutes to decypher the puzzles\nand find Gepetto before the IDCDA will find you.\nCan you handle this?\n\n<a class=\"button button button--antiman button--inverted button--border-thin button--text-thick\" href=\"game.php\">I can handle this</> ",],
+            "^1000<strong>\&lt;swartzshield&gt;</strong>^200 Thanks for your help.\nYou've got 25 minutes to decypher the puzzles\nand find Gepetto before the IDCDA will find you.\n\n<em>&lt;type <strong>'start</strong> when you're ready&gt;</em>",],
 
             typeSpeed: 0,
             backDelay: 500,
@@ -16,9 +16,28 @@
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,
-            resetCallback: function() { newTyped(); }
+            resetCallback: function() { newTyped(); },
+            
+            callback: function() {
+            	$('.typed-cursor').css('display', 'none');
+
+            	$('#formStartgame').css('display', 'inline');
+            	$('#startgame').css('display', 'inline');
+            	$('#startgame').focus();
+
+            	$('#formStartgame').on('submit', function(e) {
+            		e.preventDefault();
+            		if($('#startgame').val().toLowerCase() == 'start') {
+                        window.location = 'game.php'
+                    } else {
+                        alert('To proceed type \'Y\'.');
+                    }
+            	});
+            }
         });
+        
     });
+
 
     function newTyped(){ /* A new typed object */ }
 
@@ -68,14 +87,17 @@
 <body>
 
 <div class="header">
-<img onload="this.style.opacity='1';" src="img/s_logo-big.png">
+<img class="shield" onload="this.style.opacity='1';" src="img/s_shield-big.png">
+<img class="logo" onload="this.style.opacity='1';" src="img/s_logo-big.png">
 </div>
 
 <div class="textbox">
     <div class="wrap">
         <div class="type-wrap">
             <span id="typed" style="white-space:pre;"></span>
-            <span id="typedbutton" style="white-space:pre;"></span>
+<form action="#" id="formStartgame">
+            	<input autocomplete="no" type="text" name="startgame" required="true" id="startgame" autocomplete="off">
+            </form>
         </div>
     </div>
 </div>
