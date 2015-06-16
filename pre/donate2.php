@@ -8,7 +8,7 @@
         $("#typed").typed({
             strings: [
             
-            "Choose you payment\n\n<em>[1] Bank<em>\n<em>[2] Creditcard<em>\n<em>[3] Something else<em>\n<em>[4] Something more else<em>\n\n<em>number:</em> ",],
+            "Choose a payment option below\n\n<em>[1] Bank<em>\n<em>[2] Creditcard<em>\n<em>[3] Something else<em>\n<em>[4] Something more else<em>\n\n<em>number:</em> ",],
 
             typeSpeed: 0,
             backDelay: 500,
@@ -85,6 +85,11 @@
 </head>
 <body>
 
+<div class="header">
+	<img class="shield" onload="this.style.opacity='1';" src="img/s_shield-big.png">
+	<img class="logo" onload="this.style.opacity='1';" src="img/s_logo-big.png">
+</div>
+
 <div class="textbox">
     <div class="wrap">
         <div class="type-wrap">
@@ -96,5 +101,4 @@
     </div>
 </div>
 
-</body>
-</html>
+<?php require 'inc/footer.php'; ?>

@@ -87,8 +87,8 @@
 <body>
 
 <div class="header">
-<img class="shield" onload="this.style.opacity='1';" src="img/s_shield-big.png">
-<img class="logo" onload="this.style.opacity='1';" src="img/s_logo-big.png">
+	<img class="shield" onload="this.style.opacity='1';" src="img/s_shield-big.png">
+	<img class="logo animate" onload="this.style.opacity='1';" src="img/s_logo-big.png">
 </div>
 
 <div class="textbox">
@@ -102,5 +102,4 @@
     </div>
 </div>
 
-</body>
-</html>
+<?php require 'inc/footer.php'; ?>

@@ -60,6 +60,9 @@ body {
 .header img.logo {
 	width: 100%; 
 	margin-left:0%;
+}
+
+.header img.logo.animate {
 	opacity:0;
 	-moz-transition: opacity 12s; /* Firefox 4 */
 	-webkit-transition: opacity 12s; /* Safari and Chrome */
@@ -93,33 +96,6 @@ a:hover {color: white}
 
 strong	{color:#429fef; font-weight: normal;}
 em		{font-style: normal;color: #A3A3A3;}
-
-.footer {
-      position: absolute;
-      bottom: 0;
-      width: 98%;
-      text-align: right;
-      margin: 0 auto;
-}
-
-.footer a,
-.footer a:hover,
-.footer a:active,
-.footer a:visited {
-	padding: 5px;
-	color: lightgray;
-	font-size: 80%;
-	border:none;
-	font-weight: normal;
-	text-transform: none;
-	cursor: pointer;
-}
-
-.footer a:hover {
-	text-decoration: underline;
-	background: none;
-	color: inherit;
-}
 
 /* FORM STYLING */
 
@@ -167,7 +143,6 @@ input:focus {
     animation: blink 0.7s infinite;
 }
 
-
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -184,3 +159,40 @@ input:focus {
     100% { opacity:1; }
 }
 
+/* FOOTER STYLING */
+
+.footer {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.footer ul {
+	list-style: none;
+	display: block;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.footer ul li {
+	display: inline-block;
+}
+
+.footer a,
+.footer a:hover,
+.footer a:active,
+.footer a:visited {
+	color: #656565;
+	font-size: 80%;
+	border:none;
+	font-weight: normal;
+	text-transform: none;
+	cursor: pointer;
+	padding: 0em .6em;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	background: none;
+	color: inherit;
+}

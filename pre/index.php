@@ -100,5 +100,4 @@
     </div>
 </div>
 
-</body>
-</html>
+<?php require 'inc/footer.php'; ?>
