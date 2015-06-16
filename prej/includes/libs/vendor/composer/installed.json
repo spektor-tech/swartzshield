@@ -1,0 +1,63 @@
+[
+    {
+        "name": "mollie/mollie-api-php",
+        "version": "1.2.6",
+        "version_normalized": "1.2.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mollie/mollie-api-php.git",
+            "reference": "7ff27399057ebf5d17bf51dd97177434b0e7da75"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/7ff27399057ebf5d17bf51dd97177434b0e7da75",
+            "reference": "7ff27399057ebf5d17bf51dd97177434b0e7da75",
+            "shasum": ""
+        },
+        "require-dev": {
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2015-06-15 14:06:50",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Mollie B.V.",
+                "email": "info@mollie.com"
+            }
+        ],
+        "description": "Mollie API client library for PHP",
+        "homepage": "https://github.com/mollie/mollie-api-php",
+        "keywords": [
+            "api",
+            "bancontact",
+            "banktransfer",
+            "belfius",
+            "belfius direct net",
+            "bitcoin",
+            "creditcard",
+            "gateway",
+            "ideal",
+            "mistercash",
+            "mollie",
+            "payment",
+            "payments",
+            "paypal",
+            "paysafecard",
+            "refunds",
+            "sepa",
+            "service",
+            "sofort",
+            "sofortbanking"
+        ]
+    }
+]
