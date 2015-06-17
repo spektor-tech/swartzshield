@@ -1,5 +1,6 @@
 {
     "require": {
-        "mollie/mollie-api-php": "1.2.x"
+        "mollie/mollie-api-php": "1.2.x",
+        "swiftmailer/swiftmailer": "^5.4"
     }
 }

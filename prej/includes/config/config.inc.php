@@ -13,5 +13,14 @@ return [
 		'dsn' => 'mysql:host=localhost;port=3306;dbname=swartzshield',
 		'user' => 'swartzshield',
 		'pass' => 'zwartismooi'
+	],
+	'mollie' => [
+		'key' => 'test_xNpQPB3pauuQh9c6TmCaYN5PmAAWyK'
+	],
+	'mail' => [
+		'username' 	=> 'joris@spektor.nl',
+		'password' 	=> 'J1bbe1scool3D!',
+		'host'		=> 'smtp.gmail.com',
+		'port'		=> 465,
 	]
 ];
